@@ -15,15 +15,24 @@ main {
   place-content: center;
 }
 
-input::-webkit-outer-spin-button,
+input::placeholder {
+  color: #d1d5db;
+}
+
+/* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
+} */
 
 /* Firefox */
-input[type='number'] {
+/* input[type='number'] {
   -moz-appearance: textfield;
+} */
+
+h1 {
+  color: var(--primary);
+  font-size: 36px;
 }
 
 .heading {
@@ -32,10 +41,6 @@ input[type='number'] {
 
 .dollarImg {
   width: 150px;
-}
-
-h1 {
-  color: var(--primary);
 }
 
 .rateContainer {
@@ -48,8 +53,10 @@ h1 {
 }
 
 .rate {
-  /* font-size: 1rem; */
   padding: 0 10px;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--primary);
 }
 
 .container {
@@ -106,7 +113,7 @@ p,
   border: 0;
   outline: none;
   border-radius: 5px;
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -120,6 +127,10 @@ p,
 @media (max-width: 600px) {
   .currency input {
     width: 200px;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 }
 

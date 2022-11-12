@@ -12,8 +12,8 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script defer src="main.js"></script>
-    <title>Exchange Rate Calculator</title>
+    <script type="module" src="main.js"></script>
+    <title>Exchange Rate Converter</title>
   </head>
   <body>
     <main>
@@ -25,7 +25,7 @@
         </div>
 
         <div class="rateContainer">
-          <div id="rate" class="rate">rate</div>
+          <p id="rate" class="rate"></p>
         </div>
 
         <div class="currency">
@@ -145,11 +145,11 @@
             <option value="ZAR">ZAR</option>
           </select>
 
-          <input id="amountTwo" type="number" placeholder="0" />
+          <input id="amountTwo" type="number" />
         </div>
 
         <div class="exchange-rate-container">
-          <button id="convert" class="btn">Convert</button>
+          <button id="swap" class="btn">swap</button>
         </div>
       </div>
     </main>
